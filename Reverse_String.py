@@ -1,3 +1,2 @@
 n=input()
-txt=n[::-1]
-print(txt)
+print(" ".join(reversed(n.split())))
