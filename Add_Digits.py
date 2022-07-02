@@ -1,10 +1,13 @@
-n=int(input())
-sum=0
-while n:
- d=n%10
- sum+=d
- n=n//10
- if(n==0 and sum>9):
-    n=sum
-    sum=0
-print(sum)
+def addDigits(num):
+    
+    while(num>=10):
+        temp=0
+        while(num>0):
+            temp=temp+num%10
+            num=num//10
+            
+        num=temp
+        
+    return num
+num=int(input())
+print(addDigits(num))
